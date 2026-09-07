@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archer Chain Analytics Inc. | Sovereign Systems</title>
+    <style>
+        :root {
+            --bg-deep-space: #11161d;
+            --bg-console-slate: #161e29;
+            --accent-maihkan-amber: #dcae3f;
+            --accent-muted-iron: #7e8f9f;
+            --text-silver-chalk: #cfd6dd;
+            --highlight-neon: #ffd166;
+            --border-grid: #242f3e;
+            --font-mono: 'Fira Code', 'Courier New', Courier, monospace;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg-deep-space);
+            color: var(--text-silver-chalk);
+            font-family: var(--font-mono);
+            font-size: 14px;
+            line-height: 1.6;
+            letter-spacing: -0.02em;
+        }
+        h1, h2, h3, .tracking-wide { letter-spacing: 0.12em; text-transform: uppercase; }
+        .grid-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 16px;
+        }
+        header {
+            grid-column: span 12;
+            background-color: var(--bg-console-slate);
+            border: 1px solid var(--border-grid);
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .brand-title {
+            color: var(--accent-maihkan-amber);
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .brand-title::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background-color: var(--accent-maihkan-amber);
+        }
+        .status-badge {
+            color: var(--accent-muted-iron);
+            font-size: 0.85rem;
+            border: 1px solid var(--border-grid);
+            padding: 4px 8px;
+            background-color: var(--bg-deep-space);
+        }
+        .status-badge span { color: var(--highlight-neon); }
+        .hero {
+            grid-column: span 12;
+            background-color: var(--bg-console-slate);
+            border: 1px solid var(--border-grid);
+            padding: 40px;
+        }
+        .hero h1 { color: var(--text-silver-chalk); font-size: 1.8rem; margin-bottom: 16px; }
+        .hero p { color: var(--accent-muted-iron); max-width: 800px; font-size: 1rem; margin-bottom: 24px; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--bg-deep-space);
+            color: var(--accent-maihkan-amber);
+            border: 1px solid var(--accent-maihkan-amber);
+            padding: 10px 20px;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+        }
+        .btn::before { content: '■'; margin-right: 10px; font-size: 0.7rem; color: var(--accent-maihkan-amber); }
+        .btn-highlight { border-color: var(--highlight-neon); color: var(--highlight-neon); }
+        .btn-highlight::before { color: var(--highlight-neon); }
+        .section-header {
+            grid-column: span 12;
+            border-bottom: 1px solid var(--border-grid);
+            padding-bottom: 8px;
+            margin-top: 16px;
+            color: var(--accent-muted-iron);
+        }
+        .card {
+            grid-column: span 4;
+            background-color: var(--bg-console-slate);
+            border: 1px solid var(--border-grid);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        @media (max-width: 900px) { .card { grid-column: span 6; } }
+        @media (max-width: 600px) { .card { grid-column: span 12; } .hero { padding: 20px; } }
+        .card-header { margin-bottom: 16px; border-bottom: 1px solid var(--border-grid); padding-bottom: 12px; }
+        .card-title { color: var(--accent-maihkan-amber); font-size: 1.1rem; }
+        .card-subtitle { color: var(--accent-muted-iron); font-size: 0.75rem; margin-top: 4px; }
+        .card-body { color: var(--text-silver-chalk); font-size: 0.9rem; margin-bottom: 24px; }
+        footer {
+            grid-column: span 12;
+            background-color: var(--bg-console-slate);
+            border: 1px solid var(--border-grid);
+            padding: 20px 24px;
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            color: var(--accent-muted-iron);
+            font-size: 0.8rem;
+        }
+        .terminal-prompt { color: var(--highlight-neon); }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="brand-title">ARCHER CHAIN ANALYTICS</div>
+            <div class="status-badge">SYS_STATUS: <span>AIRGAPPED_ACTIVE</span></div>
+        </header>
+        <section class="hero">
+            <h1>Sovereign Ingestion & Telemetry Systems</h1>
+            <p>Zero-telemetry, local-first blockchain listeners, digital POS networks, and offline forensic fingerprinting engines built on verified cryptography.</p>
+            <a href="#systems" class="btn btn-highlight">INTERACT_SYSTEMS</a>
+        </section>
+        <div class="section-header" id="systems">
+            <h2 class="tracking-wide">// DEPLOYED_CORE_MODULES</h2>
+        </div>
+        <article class="card">
+            <div>
+                <div class="card-header">
+                    <h3 class="card-title">Alētheia™</h3>
+                    <div class="card-subtitle">Multi-Chain Telemetry Ingestion</div>
+                </div>
+                <div class="card-body">Local-first multi-chain observability mesh across EVM, Solana, Bitcoin, and non-EVM chains with zero outbound telemetry leaks.</div>
+            </div>
+            <a href="#" class="btn">SPEC_DOCS</a>
+        </article>
+        <article class="card">
+            <div>
+                <div class="card-header">
+                    <h3 class="card-title">RaPaX™</h3>
+                    <div class="card-subtitle">Sovereign Digital POS Engine</div>
+                </div>
+                <div class="card-body">Autonomous point-of-sale and asset distribution machine with integrated multi-currency crypto processing.</div>
+            </div>
+            <a href="#" class="btn">DEPLOY_POS</a>
+        </article>
+        <article class="card">
+            <div>
+                <div class="card-header">
+                    <h3 class="card-title">AcerbE™</h3>
+                    <div class="card-subtitle">Forensic Watermarking Engine</div>
+                </div>
+                <div class="card-body">Tamper-destructive forensic digital fingerprinter for embedding invisible steganographic and cryptographic asset markers.</div>
+            </div>
+            <a href="#" class="btn">INSPECT_CORE</a>
+        </article>
+        <footer>
+            <div><span class="terminal-prompt">root@archer-chain:~#</span> ARCHER CHAIN ANALYTICS INC. [SK REG: 102237785]</div>
+            <div>ZERO TRUST // LOCAL FIRST // SASKATOON, CA</div>
+        </footer>
+    </div>
+</body>
+</html>
