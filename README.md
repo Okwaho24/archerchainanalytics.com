@@ -1,12 +1,12 @@
-# Archer Chain Analytics Inc. (archerchainanalytics.com)
+# Archer Chain Analytics (archerchainanalytics.com)
 
-Official landing page and sovereign system specification hub for Archer Chain Analytics Inc.
+Official landing page and sovereign system specification hub for Archer Chain Analytics
 
 ---
 
 ## 🏛️ System Architecture & Brand Alignment
 
-This repository hosts the static landing canvas for Archer Chain Analytics Inc., engineered with local-first, zero-telemetry principles and adhering strictly to institutional visual design guidelines.
+This repository hosts the static landing canvas for Archer Chain Analytics engineered with local-first, zero-telemetry principles and adhering strictly to institutional visual design guidelines.
 
 * **Primary Canvas (`#11161d`)**: Deep Space Black base environment.
 * **Component Canvas (`#161e29`)**: Console Slate cards and structural containers.
